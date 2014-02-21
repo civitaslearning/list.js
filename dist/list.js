@@ -1453,7 +1453,7 @@ require.alias("component-type/index.js", "type/index.js");
 if (typeof exports == "object") {
   module.exports = require("list.js");
 } else if (typeof define == "function" && define.amd) {
-  define(function(){ return require("list.js"); });
+  define([], function(){ return require("list.js"); });
 } else {
   this["List"] = require("list.js");
 }})();
